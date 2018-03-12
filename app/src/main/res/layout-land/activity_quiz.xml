@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    tools:context="com.example.navpreetkaur.geoquizassignment.QuizActivity">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/view_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_question"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:padding="24dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/horizontal_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/true_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/true_button"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/false_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_dark"
+
+                android:text="@string/false_button"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/back_button"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/colorPrimary"
+                android:contentDescription="@string/todo"
+                android:layout_gravity="bottom|left"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:srcCompat="@android:drawable/ic_media_previous" />
+
+            <ImageButton
+                android:id="@+id/next_button"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="bottom|right"
+                android:contentDescription="@string/todo"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:srcCompat="@android:drawable/ic_media_next" />
+
+
+   </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
